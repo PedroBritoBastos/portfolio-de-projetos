@@ -1,0 +1,29 @@
+:root {
+   background-color: rgba(96, 90, 89, 1);
+   color: white;
+   font-size: 62.5%;
+   font-family: "Kadwa", serif, sans-serif;
+   --default-orange-layout: #deaa56;
+   --deafult-background-color: rgba(96, 90, 89, 1);
+   --title-background-color: #605a59;
+   --scrollbar-background: #8d8583;
+   --scrollbar-active: #9c9391;
+   --scrollbar-thumb-color: #deaa56;
+   --scrollbar-thumb-hover-color: #ebbb6e;
+}
+
+body {
+   position: relative;
+}
+
+.app {
+   background-color: rgb(59, 56, 55);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* min-width: 571px; */
+}
+
+.glow {
+   filter: drop-shadow(3px 8px 35px #deaa56);
+}

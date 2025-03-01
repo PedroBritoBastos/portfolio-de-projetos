@@ -1,0 +1,8 @@
+.display-invisible {
+   opacity: 0;
+}
+
+.display-visible {
+   opacity: 1;
+   transition: opacity 1s ease-in;
+}

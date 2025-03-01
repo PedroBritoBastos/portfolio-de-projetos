@@ -1,0 +1,35 @@
+@keyframes bottomToTop {
+   0% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(-30px);
+   }
+}
+
+@keyframes topToBottom {
+   0% {
+      transform: translateY(-30px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+.animated-bottom-top {
+   animation: bottomToTop 3s ease-in-out infinite alternate;
+}
+
+.animated-top-bottom {
+   animation: topToBottom 3s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 35.625em) {
+   .animated-bottom-top {
+      animation: none;
+   }
+   
+   .animated-top-bottom {
+      animation: none;
+   }
+}

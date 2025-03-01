@@ -1,0 +1,18 @@
+.navbarContainer {
+   background-color: rgba(96, 90, 89, 1);
+   border-bottom: 5px solid rgb(53, 51, 50);
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   overflow-x: hidden;
+
+   & a {
+      color: white;
+      font-size: 2rem;
+   }
+
+   & a:hover {
+      color: var(--default-orange-layout);
+   }
+}
+

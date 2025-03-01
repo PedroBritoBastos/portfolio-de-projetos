@@ -1,0 +1,97 @@
+.headerContainer {
+   height: 60em;
+   background-color: #3b3837;
+   color: white;
+   position: relative;
+}
+
+.welcome {
+   width: 70%;
+   height: fit-content;
+   margin-top: 10em;
+   padding-bottom: 5em;
+   border-bottom: 2px dashed var(--default-orange-layout);
+   flex-wrap: wrap;
+
+   & h1 {
+      font-size: 6rem;
+   }
+
+   & p {
+      font-size: 3rem;
+   }
+}
+
+.profile-image {
+   display: block;
+   width: 20em;
+   border-radius: 50%;
+   outline: 5px solid var(--default-orange-layout);
+   margin-bottom: 3em;
+}
+
+.contacts {
+   margin-top: 3em;
+   gap: 30px;
+
+   & svg {
+      background-color: rgba(0, 0, 0, 0.288);
+      border-radius: 50%;
+      padding: 1em;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.685);
+   }
+}
+
+.contacts a:hover {
+   
+   & svg {
+      background-color: #deaa5648;
+      box-shadow: 0px 3px 8px #deaa5662;
+   }
+}
+
+@media screen and (max-width: 52.3125em) {
+   .contacts {
+      margin-bottom: 3em;
+   }
+}
+
+@media screen and (max-width: 34.875em) {
+   .profile-image {
+      width: 15em;
+   }
+
+   .welcome h1 {
+      font-size: 4rem;
+   }
+
+   .welcome p {
+      font-size: 1.8rem;
+   }
+}
+
+@media screen and (max-width: 23em) {
+   .welcome h1 {
+      font-size: 3.6rem;
+   }
+}
+
+@media screen and (max-width: 16.25em) {
+   .profile-image {
+      width: 12em;
+   }
+
+   .welcome h1 {
+      font-size: 2.5rem;
+   }
+
+   .welcome p {
+      font-size: 1.5rem;
+   }
+}
+
+@media screen and (max-width: 12.5em) {
+   .profile-image {
+      width: 8em;
+   }
+}

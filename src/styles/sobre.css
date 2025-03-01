@@ -1,0 +1,47 @@
+.sectionSobre {
+   margin-top: 0;
+}
+
+.sobre-container {
+   margin-top: 5em;
+   margin-bottom: 5em;
+}
+
+.sobre-info {
+   color: white;
+   font-size: 2rem;
+}
+
+.sobre-icon {
+   color: white;
+   font-size: 20rem;
+}
+
+@media screen and (max-width: 55.3125em) {
+   .sobre-icon-container {
+      display: none;
+   }
+
+   .sobre-info {
+      flex: 1;
+   }
+}
+
+@media screen and (max-width: 45.3125em) {
+   .sobre-info {
+      font-size: 1.8rem;
+   }
+}
+
+@media screen and (max-width: 16.25em) {
+   .sobre-info {
+      color: white;
+      font-size: 1rem;
+   }
+}
+
+@media screen and (max-width: 52.125em) {
+   .sectionSobre {
+      margin-top: 5em;
+   }
+}

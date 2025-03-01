@@ -1,0 +1,134 @@
+/* container para os projetos */
+.projects-wrapper {
+   display: flex;
+   justify-content: start;
+   gap: 35px;
+   padding: 6em 0 2em 0;
+}
+
+/* container do projeto especifico */
+.project-container {
+   background-color: rgba(255, 255, 255, 0.445);
+   height: 60em;
+   flex-basis: 50%;
+   display: flex;
+   flex-direction: column;
+   border-radius: 0 20px 0 20px;
+   border-width: 6px;
+   border-style: solid;
+   border-color: rgb(59, 56, 55) rgb(59, 56, 55) var(--default-orange-layout) var(--default-orange-layout);
+}
+.project-name {
+   text-align: center;
+   font-size: 3.2rem;
+   background-color: rgb(59, 56, 55);
+   padding: .5em;
+   margin-bottom: 0;
+   color: var(--default-orange-layout);
+}
+.project-image {
+   display: block;
+   width: 100%;
+   height: 50%;
+}
+.project-description {
+   width: 100%;
+   font-size: 2rem;
+}
+.labels-container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+
+   & .label {
+      font-size: 1.6rem;
+      background-color: rgba(59, 56, 55, 0.562);
+      color: var(--default-orange-layout);
+      padding: .5em;
+      font-weight: 600;
+      border-radius: 10px;
+   }
+}
+.project-link-container {
+   width: 100%;
+   background-color: rgb(59, 56, 55);
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1em;
+   border-radius: 0 0 0 13px;
+
+   & .project-link {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: white;
+      transition: color .3s;
+   }
+   & .project-link:hover {
+      color: var(--default-orange-layout);
+      transition: color .3s;
+   }
+}
+
+@media screen and (max-width: 55.625em) {
+   .projects-wrapper {
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 36.25em) {
+   .project-name {
+      font-size: 2.8rem;
+   }
+
+   .project-description {
+      font-size: 1.8rem;
+   }
+
+   .label {
+      font-size: 1.4rem;
+   }
+
+   .project-link {
+      font-size: 1.4rem;
+   }
+}
+
+@media screen and (max-width: 24em) {
+   .project-name {
+      font-size: 2.4rem;
+   }
+
+   .project-description {
+      font-size: 1.4rem;
+   }
+
+   .label {
+      font-size: 1.1rem;
+   }
+
+   .project-link {
+      font-size: 1.1rem;
+   }
+}
+
+@media screen and (max-width: 15.9375em) {
+   .project-name {
+      font-size: 1rem;
+   }
+
+   .project-description {
+      font-size: 1rem;
+   }
+
+   .label {
+      display: none;
+   }
+
+   .project-link {
+      font-size: 1rem;
+   }
+}
+

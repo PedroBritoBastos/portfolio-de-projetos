@@ -1,0 +1,49 @@
+.sectionContainer {
+   width: 90%;
+   background-color: var(--title-background-color);
+   padding: 5em 10em;
+   margin: 4em 2em;
+   border-radius: 20px;
+   box-shadow: 5px 5px 20px rgb(37, 36, 35);
+   background: linear-gradient(326deg, rgba(56, 54, 54, 0.659) 0%, rgba(116, 109, 108, 0.877) 38%);
+}
+
+.division-style {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.division-style::before {
+   content: "";
+   display: block;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: var(--default-orange-layout);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   box-shadow: 0 0 15px var(--default-orange-layout);
+}
+
+.division {
+   color: var(--default-orange-layout);
+   border: 2px solid var(--default-orange-layout);
+   height: 2px;
+}
+
+@media screen and (max-width: 35em) {
+   .sectionContainer {
+      padding: 2em 5em;
+   }
+}
+
+@media screen and (max-width: 27.8125em) {
+   .sectionContainer {
+      padding: 1em 3em;
+   }
+}
