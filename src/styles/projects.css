@@ -121,6 +121,10 @@
    .project-link {
       font-size: 1.1rem;
    }
+
+   .project-image {
+      height: 160px;
+   }
 }
 
 @media screen and (max-width: 15.9375em) {
@@ -139,5 +143,7 @@
    .project-link {
       font-size: 1rem;
    }
+
+   
 }
 
